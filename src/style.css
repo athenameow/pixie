@@ -1,0 +1,116 @@
+/* pixie built-in style. Override anything in ~/.config/pixie/style.css */
+
+window.pixie {
+  background: none;
+}
+
+/* The card is the frosted glass; .content holds the search field and rows on
+   top of it (a separate surface, so typing never redraws the glass). Card
+   radius 16 px with 1 px border + 6 px padding, so the 10 px rows and search
+   field are concentric with it. Keep .content's border and padding in step
+   with the card's border. */
+.card {
+  background-color: rgba(16, 16, 20, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  /* GTK turns this into a compositor blur request (ext-background-effect);
+     Hyprland then blurs exactly the card's area. The strength is Hyprland's;
+     GTK only asks for blur from 10px up. */
+  backdrop-filter: blur(12px);
+}
+
+.content {
+  border: 1px solid transparent;
+  padding: 6px;
+  color: #e8e8ee;
+  font-family: "Adwaita Sans", sans-serif;
+}
+
+.dim {
+  color: rgba(232, 232, 238, 0.5);
+}
+
+/* Search */
+
+.content entry {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  outline: none;
+  min-height: 40px;
+  padding: 0 12px;
+  font-size: 15px;
+  transition: none;
+}
+
+.content entry:focus-within {
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.content entry > image {
+  color: rgba(232, 232, 238, 0.5);
+}
+
+.content entry > text > placeholder {
+  color: rgba(232, 232, 238, 0.4);
+}
+
+.status {
+  font-size: 12px;
+  color: #ef8a8a;
+  margin: 0 6px;
+}
+
+/* Results */
+
+scrolledwindow,
+listview.results {
+  background: none;
+}
+
+listview.results > row {
+  padding: 8px 10px;
+  margin-bottom: 2px;
+  border-radius: 10px;
+  outline: none;
+  transition: none;
+}
+
+listview.results > row:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+listview.results > row:selected {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: inherit;
+}
+
+.row-content {
+  min-height: 32px;
+}
+
+/* Desktop actions, shown under their app with Tab or Right */
+.row-content.action {
+  margin-left: 22px;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: rgba(232, 232, 238, 0.55);
+}
+
+.row-content.calc .title {
+  font-family: "Geist Mono", monospace;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.empty {
+  font-size: 13px;
+}

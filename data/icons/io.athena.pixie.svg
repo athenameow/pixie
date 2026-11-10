@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2a2a"/><stop offset="1" stop-color="#101616"/></linearGradient>
+  <radialGradient id="teal" gradientUnits="userSpaceOnUse" cx="44" cy="216" r="200"><stop offset="0.0" stop-color="#85d6c0" stop-opacity="0.850"/><stop offset="0.1" stop-color="#85d6c0" stop-opacity="0.829"/><stop offset="0.2" stop-color="#85d6c0" stop-opacity="0.769"/><stop offset="0.3" stop-color="#85d6c0" stop-opacity="0.675"/><stop offset="0.4" stop-color="#85d6c0" stop-opacity="0.556"/><stop offset="0.5" stop-color="#85d6c0" stop-opacity="0.425"/><stop offset="0.6" stop-color="#85d6c0" stop-opacity="0.294"/><stop offset="0.7" stop-color="#85d6c0" stop-opacity="0.175"/><stop offset="0.8" stop-color="#85d6c0" stop-opacity="0.081"/><stop offset="0.9" stop-color="#85d6c0" stop-opacity="0.021"/><stop offset="1.0" stop-color="#85d6c0" stop-opacity="0.000"/></radialGradient>
+  <radialGradient id="sky" gradientUnits="userSpaceOnUse" cx="222" cy="44" r="180"><stop offset="0.0" stop-color="#7dcfff" stop-opacity="0.850"/><stop offset="0.1" stop-color="#7dcfff" stop-opacity="0.829"/><stop offset="0.2" stop-color="#7dcfff" stop-opacity="0.769"/><stop offset="0.3" stop-color="#7dcfff" stop-opacity="0.675"/><stop offset="0.4" stop-color="#7dcfff" stop-opacity="0.556"/><stop offset="0.5" stop-color="#7dcfff" stop-opacity="0.425"/><stop offset="0.6" stop-color="#7dcfff" stop-opacity="0.294"/><stop offset="0.7" stop-color="#7dcfff" stop-opacity="0.175"/><stop offset="0.8" stop-color="#7dcfff" stop-opacity="0.081"/><stop offset="0.9" stop-color="#7dcfff" stop-opacity="0.021"/><stop offset="1.0" stop-color="#7dcfff" stop-opacity="0.000"/></radialGradient>
+  <clipPath id="sq"><rect x="8" y="8" width="240" height="240" rx="52"/></clipPath>
+</defs>
+<rect x="8" y="8" width="240" height="240" rx="52" fill="url(#bg)"/>
+<g clip-path="url(#sq)">
+  <rect x="8" y="8" width="240" height="240" fill="url(#teal)"/>
+  <rect x="8" y="8" width="240" height="240" fill="url(#sky)"/>
+</g>
+<rect x="8" y="8" width="240" height="240" rx="52" fill="#ffffff" fill-opacity="0.14"/>
+<rect x="9" y="9" width="238" height="238" rx="51" fill="none" stroke="#ffffff" stroke-opacity="0.34" stroke-width="2"/>
+<rect x="46" y="60" width="164" height="36" rx="18" fill="#ffffff" fill-opacity="0.92"/>
+<circle cx="70" cy="77" r="7.5" fill="none" stroke="#1d3a36" stroke-opacity="0.75" stroke-width="4"/>
+<path d="M75.5 82.5 L81 88" stroke="#1d3a36" stroke-opacity="0.75" stroke-width="4" stroke-linecap="round"/>
+<rect x="46" y="120" width="30" height="30" rx="9" fill="#ffffff" fill-opacity="0.7"/>
+<rect x="88" y="128" width="110" height="14" rx="7" fill="#ffffff" fill-opacity="0.5"/>
+<rect x="46" y="166" width="30" height="30" rx="9" fill="#ffffff" fill-opacity="0.45"/>
+<rect x="88" y="174" width="76" height="14" rx="7" fill="#ffffff" fill-opacity="0.32"/>
+</svg>
